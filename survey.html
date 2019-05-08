@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Coffee Survey</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+      <header>
+          <h1>
+            Roasting
+          </h1>
+          <img id="header-img" src="images/coffee-cup.png" alt="coffee cup" width="128" height="128"/>
+          <nav>
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="roasting.html">
+                Roasting
+              </a>
+            </li>
+            <li>
+              <a href="grinding.html">
+                Grinding
+              </a>
+            </li>
+            <li>
+              <a href="brewing.html">
+                Brewing
+              </a>
+            </li>
+            <li>
+              <a href="drinks.html">
+                Drinks
+              </a>
+            </li>
+            <li>
+              <a href="survey.html">
+                Coffee Survey
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <div class="text-body">
+      <form action="form-submit.php" method="get">
+        <h1>Coffee Survey</h1>
+        <aside>
+          <fig>
+            <img src="images/espresso.jpg" alt="espresso"/>
+          </fig>
+        </aside>
+
+        <fieldset>
+          <legend>
+            Personal information
+          </legend>
+          <label for="your-name">
+            Your Name:
+          <br/>
+          </label>
+          <input id="your-name" type="text" name="your name" autofocus required size="40"/>
+          <br/>
+          <label for="email">
+            Email Address:
+          </label>
+          <br/>
+          <input id="email" type="email" name="email" required size="40"/>
+          <br/>
+        </fieldset>
+      <fieldset>
+        <legend>
+          Coffee Preferences
+        <br/>
+        <br/>
+        </legend>
+        Tell us your coffee preparation methods.
+        <br/>
+        <textarea id="preparation" name="preparation" cols="40" rows="6">
+        </textarea>
+        <br/>
+        <br/>
+        Do you grind your own beans?
+        <br/>
+        <input id="grind-beans" type="radio" name="grind-beans" value="yes"/>yes
+        <br/>
+        <input id="grind-beans" type="radio" name="grind-beans" value="no"/>no
+        <br/>
+        <br/>
+        How do you drink your coffee?
+        <br/>
+        <input id="drink" type="checkbox" name="drink" value="sugar"/>with sugar
+        <br/>
+        <input id="drink" type="checkbox" name="drink" value="sugar"/>with cream
+        <br/>
+        <br/>
+        What is your favorite coffee drink?
+        <br/>
+        <select id="favorite" name="favorite">
+          <option value="">please select a drink</option>
+          <option value="drip">drip coffee</option>
+          <option value="french">french press</option>
+          <option value="espresso">espresso</option>
+          <option value="latte">latte</option>
+          <option value="flavored">flavored</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="submit" id="submit" name="submit" value="submit"/>
+      </fieldset>
+  </form>
+    </div>
+  </body>
+</html>
